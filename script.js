@@ -3,7 +3,7 @@ const caixaPergunta=document.querySelector('caixa-pergunta');
 const caixaResultado=document.querySelector('caixa-resultado');
 const caixaAlternativa=document.querySelector('caixa-alternativa');
 
-const pergunta=[
+const perguntas=[
     {
         enunciado:"Pergunta 1",
         Alternativas:[ "Alternativa 1", "Alternativa 2" ]
@@ -21,5 +21,7 @@ let posicao = 0;
 let perguntaAtual;
 
 function mostraPergunt(){
+perguntaAtual= perguntas[posicao];
+caixaPergunta.textContent =perguntaAtual.enunciado;
 
 }
