@@ -2,41 +2,42 @@ const caixaPrincipal = document.querySelector('.caixa-principal');
 const caixaPergunta = document.querySelector('.caixa-pergunta');
 const caixaAlternativa = document.querySelector('.caixa-alternativa');
 const caixaResultado = document.querySelector('.caixa-resultado');
+const textoResultado = document.querySelector('.texto-resultado');
 
 const perguntas = [//abre a lista de objetos (itens)
     {//abre o item
-        enunciado: "Você gosta da Inteligência Artificial?",
+        enunciado: "Você pratica alguma atividade física?",
         alternativas: [{
             texto: "Sim",
-            afirmação: "Sim, porque me ajuda em alguns afaeres"
+            afirmação: "Sim, eu pratico atividades física e gosto bastante. "
         },
         {
             texto: "Não",
-            afirmação: "Não, pois não me ajuda em nada"
+            afirmação: "Não gosto de atividade fíica e não pratico."
         }
         ]
     },
     {
-        enunciado: "Você usa a IA no seu dia a dia?",
+        enunciado: "Com qual frequência você pratica esportes?",
         alternativas: [{
-            texto: "Sim",
-            afirmação: "Sim, uso no dia a dia"
+            texto: "2 vezes na semana ou mais",
+            afirmação: "Pratico esportes mais de 2 vezes na semana."
         },
         {
-            texto:"Não",
-            afirmação:"Não uso no meu dia a dia"
+            texto:"nenhuma vez na semana",
+            afirmação:"Não pratico esportes."
         }
         ]
     },
     {
-        enunciado: "Você considera a IA importante nos dias de hoje?",
+        enunciado: "Você considera ter uma vida saudável?",
         alternativas: [{
             texto: "Sim",
-            afirmação: "Considero importante"
+            afirmação: "Considero ter uma vida saudável pois me cuido."
         },
         {
             texto: "Não",
-            afirmação: "Não conidero importante"
+            afirmação: "Não conidero ter uma via saudável pois não ligo muito para a minha saúde."
         }
         ]
     }
